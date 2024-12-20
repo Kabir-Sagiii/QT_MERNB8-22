@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Home Page</title>
+    <style>
+      /* Internal CSS Styling */
+
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f9;
+      }
+
+      header {
+        background-color: #4caf50;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+
+      nav {
+        display: flex;
+        justify-content: center;
+        background-color: #333;
+      }
+
+      nav a {
+        color: white;
+        padding: 14px 20px;
+        text-decoration: none;
+        text-align: center;
+      }
+
+      nav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+
+      .content {
+        padding: 40px;
+        text-align: center;
+      }
+
+      .section {
+        margin: 20px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        background-color: #fff;
+      }
+
+      footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+      }
+
+      .hero-image {
+        width: 100%;
+        height: 300px;
+        background-image: url("https://th.bing.com/th/id/OIP.B0bxBZsfCCgsd3TetykiHgHaFj?rs=1&pid=ImgDetMain");
+        background-size: cover;
+        background-position: center;
+        position: relative;
+      }
+
+      .hero-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 36px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <h1>Welcome to Our Home Page</h1>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About Us</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Hero Image Section -->
+    <div class="hero-image">
+      <div class="hero-text">Your Adventure Starts Here</div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+      <div class="section">
+        <h2>About Us</h2>
+        <p>
+          We are a team of passionate individuals committed to delivering
+          top-quality services to our customers.
+        </p>
+      </div>
+
+      <div class="section">
+        <h2>Our Services</h2>
+        <p>
+          We offer a wide range of services to cater to your needs, including
+          web development, graphic design, and digital marketing.
+        </p>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2024 Our Company | All Rights Reserved</p>
+    </footer>
+  </body>
+</html>

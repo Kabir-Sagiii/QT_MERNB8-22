@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML Language Details</title>
+    <style>
+      /* General Styles */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f9;
+        color: #333;
+      }
+
+      header {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 30px;
+        font-size: 2rem;
+      }
+
+      .container {
+        padding: 40px 20px;
+        max-width: 1100px;
+        margin: 0 auto;
+      }
+
+      /* Section Styles */
+      section {
+        margin-bottom: 40px;
+      }
+
+      .section-title {
+        font-size: 2rem;
+        color: #4caf50;
+        margin-bottom: 20px;
+      }
+
+      .section-content {
+        font-size: 1.2rem;
+        line-height: 1.8;
+        color: #555;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transform: scale(1);
+        opacity: 0;
+        animation: fadeInUp 1s forwards;
+      }
+
+      .code-block {
+        background-color: #2d2d2d;
+        color: #f8f8f8;
+        padding: 15px;
+        border-radius: 8px;
+        font-family: monospace;
+        font-size: 1rem;
+        overflow-x: auto;
+        white-space: pre-wrap;
+        margin-top: 15px;
+      }
+
+      /* Animation */
+      @keyframes fadeInUp {
+        from {
+          transform: translateY(30px);
+          opacity: 0;
+        }
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+
+      /* Animating Each Section */
+      section:nth-child(1) .section-content {
+        animation-delay: 0.2s;
+      }
+
+      section:nth-child(2) .section-content {
+        animation-delay: 0.4s;
+      }
+
+      section:nth-child(3) .section-content {
+        animation-delay: 0.6s;
+      }
+
+      section:nth-child(4) .section-content {
+        animation-delay: 0.8s;
+      }
+
+      footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 15px;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>HTML Language - An Overview</header>
+
+    <!-- Container -->
+    <div class="container">
+      <!-- Introduction Section -->
+      <section>
+        <h2 class="section-title">What is HTML?</h2>
+        <div class="section-content">
+          <p>
+            HTML (HyperText Markup Language) is the standard language for
+            creating web pages and web applications. It provides the structure
+            for web pages, using a system of tags and attributes to define
+            elements such as headings, paragraphs, links, images, and other
+            content.
+          </p>
+        </div>
+      </section>
+
+      <!-- Basic Structure Section -->
+      <section>
+        <h2 class="section-title">Basic HTML Structure</h2>
+        <div class="section-content">
+          <p>
+            HTML documents consist of several elements organized in a nested
+            structure. Below is an example of a basic HTML page structure:
+          </p>
+          <div class="code-block">
+            &lt;!DOCTYPE html&gt;<br />
+            &lt;html lang="en"&gt;<br />
+            &lt;head&gt;<br />
+            &nbsp;&nbsp;&lt;meta charset="UTF-8"&gt;<br />
+            &nbsp;&nbsp;&lt;meta name="viewport" content="width=device-width,
+            initial-scale=1.0"&gt;<br />
+            &nbsp;&nbsp;&lt;title&gt;Document Title&lt;/title&gt;<br />
+            &lt;/head&gt;<br />
+            &lt;body&gt;<br />
+            &nbsp;&nbsp;&lt;h1&gt;Hello World&lt;/h1&gt;<br />
+            &nbsp;&nbsp;&lt;p&gt;This is a paragraph.&lt;/p&gt;<br />
+            &lt;/body&gt;<br />
+            &lt;/html&gt;
+          </div>
+        </div>
+      </section>
+
+      <!-- Common HTML Tags Section -->
+      <section>
+        <h2 class="section-title">Common HTML Tags</h2>
+        <div class="section-content">
+          <p>Some of the most common HTML tags include:</p>
+          <ul>
+            <li>
+              <strong>&lt;h1&gt; to &lt;h6&gt;</strong> - Headings of various
+              levels
+            </li>
+            <li><strong>&lt;p&gt;</strong> - Paragraphs of text</li>
+            <li><strong>&lt;a&gt;</strong> - Hyperlinks</li>
+            <li><strong>&lt;img&gt;</strong> - Images</li>
+            <li><strong>&lt;ul&gt; and &lt;ol&gt;</strong> - Lists</li>
+            <li>
+              <strong>&lt;div&gt;</strong> - Divisions or sections of content
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- HTML Elements Attributes Section -->
+      <section>
+        <h2 class="section-title">HTML Elements and Attributes</h2>
+        <div class="section-content">
+          <p>
+            HTML elements can have attributes that provide additional
+            information or control their behavior. For example:
+          </p>
+          <div class="code-block">
+            &lt;a href="https://www.example.com"&gt;Visit Example&lt;/a&gt;<br />
+            &lt;img src="image.jpg" alt="Description"&gt;
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>&copy; 2024 HTML Guide. All Rights Reserved.</footer>
+  </body>
+</html>

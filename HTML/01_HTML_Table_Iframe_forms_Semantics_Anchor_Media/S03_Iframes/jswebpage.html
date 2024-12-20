@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>JavaScript Concepts</title>
+    <style>
+      /* General Reset and Styling */
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Arial", sans-serif;
+        background-color: #f7f7f7;
+        color: #333;
+        line-height: 1.6;
+      }
+
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 50px 20px;
+        text-align: center;
+        font-size: 2.5rem;
+        letter-spacing: 2px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 40px auto;
+        padding: 0 20px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+      }
+
+      /* Card Section Style */
+      .section-card {
+        background-color: #fff;
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        transform: scale(1);
+        opacity: 0;
+        animation: fadeInUp 0.8s forwards;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .section-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+      }
+
+      .section-title {
+        font-size: 1.8rem;
+        color: #333;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+
+      /* Content Style */
+      .section-content {
+        font-size: 1.2rem;
+        color: #555;
+        margin-bottom: 15px;
+      }
+
+      .code-block {
+        background-color: #2d2d2d;
+        color: #f8f8f8;
+        padding: 20px;
+        border-radius: 8px;
+        font-family: monospace;
+        font-size: 1.1rem;
+        overflow-x: auto;
+        white-space: pre-wrap;
+        margin-top: 20px;
+      }
+
+      /* Animation for Sections */
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      /* Animation Delay */
+      section:nth-child(1) .section-card {
+        animation-delay: 0.2s;
+      }
+
+      section:nth-child(2) .section-card {
+        animation-delay: 0.4s;
+      }
+
+      section:nth-child(3) .section-card {
+        animation-delay: 0.6s;
+      }
+
+      section:nth-child(4) .section-card {
+        animation-delay: 0.8s;
+      }
+
+      footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 15px 0;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+      }
+
+      /* Responsive Adjustments */
+      @media screen and (max-width: 768px) {
+        header {
+          font-size: 2rem;
+        }
+
+        .container {
+          width: 100%;
+          padding: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>JavaScript Concepts - Learn JS Fundamentals</header>
+
+    <!-- Main Content -->
+    <div class="container">
+      <!-- What is JavaScript? Section -->
+      <section>
+        <div class="section-card">
+          <h2 class="section-title">What is JavaScript?</h2>
+          <div class="section-content">
+            <p>
+              JavaScript is a programming language that allows you to create
+              dynamic and interactive web pages. It is the core technology of
+              web development alongside HTML and CSS, and it enables web pages
+              to respond to user actions, control multimedia, and much more.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Variables and Data Types Section -->
+      <section>
+        <div class="section-card">
+          <h2 class="section-title">Variables and Data Types</h2>
+          <div class="section-content">
+            <p>
+              Variables in JavaScript store values like numbers, strings, and
+              objects. Here’s an example:
+            </p>
+            <div class="code-block">
+              let age = 25;<br />
+              const name = 'John';<br />
+              var isActive = true;
+            </div>
+            <p>JavaScript supports various data types, including:</p>
+            <ul>
+              <li>
+                <strong>string</strong> - Represents text (e.g., `'Hello
+                World'`).
+              </li>
+              <li>
+                <strong>number</strong> - Represents numeric values (e.g., `25`,
+                `3.14`).
+              </li>
+              <li><strong>boolean</strong> - Represents `true` or `false`.</li>
+              <li>
+                <strong>object</strong> - Represents more complex data
+                structures (e.g., arrays, objects).
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Functions Section -->
+      <section>
+        <div class="section-card">
+          <h2 class="section-title">Functions</h2>
+          <div class="section-content">
+            <p>
+              Functions are reusable blocks of code that perform specific tasks.
+              Here's an example of a simple function in JavaScript:
+            </p>
+            <div class="code-block">
+              function greet(name) {<br />
+              &nbsp;&nbsp;return 'Hello, ' + name + '!';<br />
+              }<br /><br />
+              greet('John'); // Output: 'Hello, John!'
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Loops Section -->
+      <section>
+        <div class="section-card">
+          <h2 class="section-title">Loops</h2>
+          <div class="section-content">
+            <p>
+              Loops are used to repeat a block of code multiple times. The most
+              common loops in JavaScript are:
+            </p>
+            <ul>
+              <li>
+                <strong>for loop</strong> - Used to repeat code a specific
+                number of times.
+              </li>
+              <li>
+                <strong>while loop</strong> - Used to repeat code as long as a
+                condition is true.
+              </li>
+            </ul>
+            <p>Example of a `for` loop:</p>
+            <div class="code-block">
+              for (let i = 0; i < 5; i++) {<br />
+              &nbsp;&nbsp;console.log(i);<br />
+              }
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>&copy; 2024 JavaScript Guide. All Rights Reserved.</footer>
+  </body>
+</html>
