@@ -1,0 +1,14 @@
+/* #heading1 {
+  color: blue;
+} */
+#heading2 {
+  color: red;
+}
+/* #heading3 {
+  color: blue;
+} */
+
+.blueColor {
+  background-color: blue;
+  color: white;
+}
