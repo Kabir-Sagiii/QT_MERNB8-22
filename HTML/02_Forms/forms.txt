@@ -1,0 +1,23 @@
+1. visit the following website
+    https://code.visualstudio.com/
+
+2.click on download
+
+3.click on .exe file
+
+4.select the radio button (I accept the agreement)
+
+5.click on next button
+
+6.check the checkbox (create a desktop icon)
+
+7.click on next button
+
+8.click on install button
+
+
+
+
+
+
+
