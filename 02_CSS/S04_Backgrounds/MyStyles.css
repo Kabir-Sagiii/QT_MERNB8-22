@@ -1,0 +1,26 @@
+body {
+  height: 2000px;
+}
+
+h2 {
+  color: rgb(129, 69, 108);
+  text-align: center;
+  margin: 100px 0px;
+}
+
+.container {
+  border: 4px green solid;
+  height: 400px;
+  width: 1100px;
+  margin: auto;
+  /* background-color: red; */
+  /* background-image: url("https://th.bing.com/th/id/R.057b31be70cc73b9d0c829205f90e02f?rik=PxrTE7PkNVZoRg&riu=http%3a%2f%2fwww.pixelstalk.net%2fwp-content%2fuploads%2f2016%2f08%2fCool-nature-backgrounds-hd-resolution-1920x1080.jpg&ehk=hQzPW7PZMRmNSlTgkm1V0lR4FopZ7yGKJtUMRedf8wM%3d&risl=&pid=ImgRaw&r=0");
+  background-size: 100%; */
+
+  background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/disp/d245a29768167.560d9b3180768.jpg");
+  background-repeat: no-repeat;
+  /* background-size: 100% 100%; */
+  background-position: center;
+  background-attachment: scroll;
+  background-size: contain;
+}
